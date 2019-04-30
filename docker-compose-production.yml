@@ -1,0 +1,31 @@
+version: '3.5'
+
+services:
+  db-travel-log:
+    container_name: db-travel-log-production
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'db'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+    ports:
+      - '3306:3306'
+    volumes:
+      - /var/www/travel-portal-db:/var/lib/mysql
+
+  travel-log-production:
+    container_name: travel-log-production
+    build:
+      context: .
+      dockerfile: server/Dockerfile-production
+    ports:
+      - 8080:8080
+    volumes:
+      - /var/www/files:/src/app/server/files
+    links:
+      - db
+    depends_on:
+      - db
+    command: [sh, -c, "npm install && npm run start"]

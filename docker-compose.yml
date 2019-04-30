@@ -1,0 +1,46 @@
+version: '3.5'
+
+services:
+  db-travel-log:
+    container_name: db-travel-log
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'db'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+    ports:
+      - 3306:3306
+    volumes:
+      - ./server/tmp/db:/var/lib/mysql
+
+  travel-log-server:
+    container_name: travel-log-server
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    volumes:
+      - ./server/src:/src/app/server/src
+      - ./server/tmp/files:/src/app/server/files
+    ports:
+      - 8080:8080
+    links:
+      - db-travel-log
+    depends_on:
+      - db-travel-log
+    command: [sh, -c, "npm install && npm start"]
+
+  travel-log-client:
+    container_name: travel-log-client
+    build:
+      context: .
+      dockerfile: client/Dockerfile
+    volumes:
+      - ./client/src:/src/app/client/src
+      - ./client/public:/src/app/client/public
+    ports:
+      - 3000:3000
+    depends_on:
+      - travel-log-server
+    command: [sh, -c, "npm install && npm start"]
