@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
@@ -15,12 +16,30 @@ class LocationModal extends Component {
     open: false,
     title: "",
     description: "",
-    viewing: "featured"
+    viewing: "featuredPhotos",
+    images: ["https://cdn.dribbble.com/users/159302/screenshots/1900376/material-spinner2.gif"]
   };
 
+  getLinks = (title, viewing) => {
+  	let ths = this;
+  	axios.get(process.env.REACT_APP_API + '/getLinks/' + this.props.country + '/' + title + '/' + viewing)
+  	.then(function(response) {
+  		let arr = [];
+  		response.data["links"].forEach(function(link) {
+  			arr.push(process.env.REACT_APP_API + link);
+  		});
+  		ths.setState({images: arr});
+    });
+  }
+
   open = (title) => {
-    this.setState({open: true, title: title});
-    this.setState({description: "This is a temporary description"});
+  	let description = "";
+  	this.props.mapData["markers"].forEach(function(marker) {
+  		if (marker["name"] === title) 
+  			description = marker["description"];
+  	});
+  	this.getLinks(title, this.state.viewing);
+  	this.setState({open: true, title: title, description: description});
   };
 
   close = () => {
@@ -29,24 +48,15 @@ class LocationModal extends Component {
 
   handleChange = event => {
     this.setState({viewing: event.target.value});
+    this.getLinks(this.state.title, event.target.value);
   };
 
-  viewAllPictures = () => {
-  	console.log("this should show the user all the pictures");
-  }
-
   render () {
-  	let images = this.props.mapData["links"].map(function(link) {
-      return  <div>
-					      <img src={link} alt="loading..."/>
-					    </div>
-    });
-    
     return (
       <div>
         <Dialog
         	fullWidth={true}
-        	maxWidth={'md'}
+        	maxWidth={'sm'}
           open={this.state.open}
           onClose={this.close}
           aria-labelledby="modal-title"
@@ -55,7 +65,9 @@ class LocationModal extends Component {
           <DialogTitle id="modal-title">{this.state.title}</DialogTitle>
           <DialogContent>
             <DialogContentText id="modal-description">
-              {this.state.description}
+            	{this.state.description.split('\n').map((item, key) => {
+							  return <span key={key}>{item}<br/></span>
+							})}
             </DialogContentText>
             <FormControl style={{marginTop: '20px', marginBottom: '20px', minWidth: '150px'}}>
               <InputLabel htmlFor="viewing-option">Viewing Option</InputLabel>
@@ -63,20 +75,25 @@ class LocationModal extends Component {
                 value={this.state.viewing}
                 onChange={this.handleChange}
               >
-                <MenuItem value="featured">Featured Photos</MenuItem>
-                <MenuItem value="all">All Photos</MenuItem>
+                <MenuItem value="featuredPhotos">Featured Photos</MenuItem>
+                <MenuItem value="allPhotos">All Photos</MenuItem>
               </Select>
             </FormControl>
-            <div style={{margin: 'auto', width: '600px'}}>
+            <div style={{margin: 'auto', width: '552px', paddingBottom: '24px'}}>
             <Carousel  	
-            	width={'600px'}
+            	width={'552px'}
             	showStatus={false}
             	infiniteLoop={true}
             	autoPlay
             	interval={7000}
+            	showThumbs={false}
             	dynamicHeight={true}
             >
-	          	{images}
+	          	{this.state.images.map(function(link) {
+					      return  <div key={link}>
+										      <img src={link} alt="loading..."/>
+										    </div>
+					    })}
 	          </Carousel>
 	          </div>
           </DialogContent>

@@ -8,12 +8,8 @@
 		{
 			"name": "Oxford",
 			"lat": 51.757607,
-			"lng": -1.256848
+			"lng": -1.256848,
+			"description": "this is\n\na\n\ntest"
 		}
-	],
-	"links": [
-		"http://lorempixel.com/output/cats-q-c-640-480-1.jpg",
-		"https://i.imgur.com/t9IQwtD.jpg",
-		"https://media.giphy.com/media/26FPCXdkvDbKBbgOI/giphy.gif"
 	]
 }

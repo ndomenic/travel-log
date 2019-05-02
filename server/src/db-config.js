@@ -8,16 +8,32 @@ const pool = mysql.createPool({
   database : 'db'
 });
 
-let query = 'CREATE TABLE IF NOT EXISTS images( \
+//Create the featured photos table
+let createFeatured = 'CREATE TABLE IF NOT EXISTS featuredPhotos( \
              id INT AUTO_INCREMENT, \
-             name VARCHAR(20), \
+             country VARCHAR(99), \
              location VARCHAR(99), \
-             description VARCHAR(9999),\
-             numFiles INT, \
+             file VARCHAR(99), \
              PRIMARY KEY (id))'
 
 pool.getConnection(function(err, connection) {
-    connection.query(query, function (err, rows, fields) {
+    connection.query(createFeatured, function (err, rows, fields) {
+        connection.release();
+        if (err) console.log(err);
+    })
+});
+
+
+//Create the all photos table
+let createAll = 'CREATE TABLE IF NOT EXISTS allPhotos( \
+             id INT AUTO_INCREMENT, \
+             country VARCHAR(99), \
+             location VARCHAR(99), \
+             file VARCHAR(99), \
+             PRIMARY KEY (id))'
+
+pool.getConnection(function(err, connection) {
+    connection.query(createAll, function (err, rows, fields) {
         connection.release();
         if (err) console.log(err);
     })

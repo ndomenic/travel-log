@@ -28,6 +28,22 @@ app.use(cors({
 app.use(bodyParser.json());
 app.use(express.static(serverDir + "build"));
 
+app.get('/getLinks/:country/:location/:table', (req,res) =>{
+		let baseLink = '/images/' + req.params.country + '/';
+		let arr = [];
+
+		pool.getConnection(function(err, connection) {
+	    connection.query('SELECT file FROM ' + req.params.table + ' WHERE country="' + req.params.country + '" AND location="' + req.params.location + '"', function (err, rows, fields) {
+	        connection.release();
+	        if (err) console.log(err);
+	        rows.forEach(function(element) {
+	        	arr.push(baseLink + element["file"])
+	        });
+	        res.json({"links": arr});
+	    })
+		});
+});
+
 app.get('/images/:country/:fileName', (req, res) => {
 	let options = {
     root: imagesDir + '/' + req.params.country,
