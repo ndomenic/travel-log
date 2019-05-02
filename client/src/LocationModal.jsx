@@ -20,9 +20,9 @@ class LocationModal extends Component {
     images: ["https://cdn.dribbble.com/users/159302/screenshots/1900376/material-spinner2.gif"]
   };
 
-  getLinks = (title, viewing) => {
+  getLinks = (title, id, viewing) => {
   	let ths = this;
-  	axios.get(process.env.REACT_APP_API + '/getLinks/' + this.props.country + '/' + title + '/' + viewing)
+  	axios.get(process.env.REACT_APP_API + '/getLinks/' + this.props.country + '/' + id + '/' + viewing)
   	.then(function(response) {
   		let arr = [];
   		response.data["links"].forEach(function(link) {
@@ -32,14 +32,14 @@ class LocationModal extends Component {
     });
   }
 
-  open = (title) => {
+  open = (title, id) => {
   	let description = "";
   	this.props.mapData["markers"].forEach(function(marker) {
   		if (marker["name"] === title) 
   			description = marker["description"];
   	});
-  	this.getLinks(title, this.state.viewing);
-  	this.setState({open: true, title: title, description: description});
+  	this.getLinks(title, id, "featuredPhotos");
+  	this.setState({id: id, open: true, viewing: "featuredPhotos", title: title, description: description});
   };
 
   close = () => {
@@ -48,7 +48,7 @@ class LocationModal extends Component {
 
   handleChange = event => {
     this.setState({viewing: event.target.value});
-    this.getLinks(this.state.title, event.target.value);
+    this.getLinks(this.state.title, this.state.id, event.target.value);
   };
 
   render () {

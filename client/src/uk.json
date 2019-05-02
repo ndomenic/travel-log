@@ -6,10 +6,151 @@
 	},
 	"markers": [
 		{
+			"id": "Blaenavon-Ironworks",
+			"name": "Blaenavon Ironworks",
+			"lat": 51.777392,
+			"lng": -3.088570,
+			"description": "This industrial site is one of the first iron smelting sites in Wales that began its industrial revolution. The accompanying picture is an iron replica of what the facility would have looked like during operations.\n\nThey mostly produced pig iron, a weaker type of iron that would later be refined into cast iron or steel. It features various furnaces and warehouses, housing for the workers, and a Balancing Tower that acted as an elevator for carts carrying the pig iron."
+		},
+		{
+			"id": "Big-Pit",
+			"name": "Big Pit",
+			"lat": 51.7728715,
+			"lng": -3.1072453,
+			"description": ""
+		},
+		{
+			"id": "Bourton-on-the-Water",
+			"name": "Bourton-on-the-Water",
+			"lat": 51.8761406,
+			"lng": -1.8058978,
+			"description": ""
+		},
+		{
+			"id": "Brighton-Royal-Pavilion",
+			"name": "Brighton & Royal Pavilion",
+			"lat": 50.8223517,
+			"lng": -0.1398742,
+			"description": ""
+		},
+		{
+			"id": "Broadway-Tower-Cotswolds",
+			"name": "Broadway Tower - Cotswolds",
+			"lat": 52.0253659,
+			"lng": -1.8286351,
+			"description": ""
+		},
+		{
+			"id": "Canterbury",
+			"name": "Canterbury",
+			"lat": 51.2785387,
+			"lng": 1.0488315,
+			"description": ""
+		},
+		{	
+			"id": "Cardiff",
+			"name": "Cardiff",
+			"lat": 51.5022199,
+			"lng": -3.2750896,
+			"description": ""
+		},
+		{
+			"id": "Cardiff-Castle",
+			"name": "Cardiff Castle",
+			"lat": 51.4822313,
+			"lng": -3.1833654,
+			"description": ""
+		},
+		{
+			"id": "Dover-Castle",
+			"name": "Dover Castle",
+			"lat": 51.128771,
+			"lng": 1.3212023,
+			"description": ""
+		},
+		{
+			"id": "Dover-National-Trail",
+			"name": "Dover National Trail",
+			"lat": 51.137435,
+			"lng": 0.9962023,
+			"description": ""
+		},
+		{
+			"id": "Forest-of-Dean",
+			"name": "Forest of Dean",
+			"lat": 51.7853065,
+			"lng": -2.7416218,
+			"description": ""
+		},
+		{
+			"id": "Gloucester",
+			"name": "Gloucester",
+			"lat": 51.8571572,
+			"lng": -2.2775319,
+			"description": ""
+		},
+		{
+			"id": "Newport",
+			"name": "Newport",
+			"lat": 51.5742802,
+			"lng": -3.0493217,
+			"description": ""
+		},
+		{
+			"id": "Newport-Transporter-Bridge",
+			"name": "Newport Transporter Bridge",
+			"lat": 51.5711643,
+			"lng": -2.9893777,
+			"description": ""
+		},
+		{
+			"id": "Nuthatch-Cottage",
+			"name": "Nuthatch Cottage",
+			"lat": 51.8453459,
+			"lng": -2.4752354,
+			"description": ""
+		},
+		{
+			"id": "Oxford",
 			"name": "Oxford",
 			"lat": 51.757607,
 			"lng": -1.256848,
 			"description": "this is\n\na\n\ntest"
+		},
+		{
+			"id": "Seven-Sisters-Walk",
+			"name": "Seven Sisters-Walk",
+			"lat": 50.7589470,
+			"lng": 0.1478850,
+			"description": ""
+		},
+		{
+			"id": "Steam-Museum-GWR",
+			"name": "Steam Museum GWR",
+			"lat": 51.562932,
+			"lng": -1.7972864,
+			"description": ""
+		},
+		{
+			"id": "Symonds-Yat-Rock",
+			"name": "Symonds Yat Rock",
+			"lat": 51.8305822,
+			"lng": -2.6398668,
+			"description": ""
+		},
+		{
+			"id": "Thornbury-Castle",
+			"name": "Thornbury Castle",
+			"lat": 51.614059,
+			"lng": -2.5323267,
+			"description": ""
+		},
+		{
+			"id": "Tredegar-House",
+			"name": "Tredegar House",
+			"lat": 51.5616266,
+			"lng": -3.030315,
+			"description": ""
 		}
 	]
 }

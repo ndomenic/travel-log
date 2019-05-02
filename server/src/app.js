@@ -29,7 +29,7 @@ app.use(bodyParser.json());
 app.use(express.static(serverDir + "build"));
 
 app.get('/getLinks/:country/:location/:table', (req,res) =>{
-		let baseLink = '/images/' + req.params.country + '/';
+		let baseLink = '/images/' + req.params.country + '/' + req.params.location + '/';
 		let arr = [];
 
 		pool.getConnection(function(err, connection) {
@@ -44,9 +44,9 @@ app.get('/getLinks/:country/:location/:table', (req,res) =>{
 		});
 });
 
-app.get('/images/:country/:fileName', (req, res) => {
+app.get('/images/:country/:location/:fileName', (req, res) => {
 	let options = {
-    root: imagesDir + '/' + req.params.country,
+    root: imagesDir + '/' + req.params.country + '/' + req.params.location,
     dotfiles: 'deny',
     headers: {
         'x-timestamp': Date.now(),

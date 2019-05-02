@@ -9,15 +9,15 @@ export class MapContainer extends Component {
     this.markerClicked = this.markerClicked.bind(this);
   }
 
-  markerClicked = title => event => {
-    this.modal.current.open(title);
+  markerClicked = (title, id) => event => {
+    this.modal.current.open(title, id);
   }
 
   render() {
     let ths =this;
     let markers = this.props.mapData["markers"].map(function(marker) {
       return <Marker
-                onClick={ths.markerClicked(marker["name"])}
+                onClick={ths.markerClicked(marker["name"], marker["id"])}
                 name={marker["name"]}
                 key={marker["name"]}
                 position={{lat: marker["lat"], lng: marker["lng"]}}
