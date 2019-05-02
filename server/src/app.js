@@ -8,7 +8,7 @@ var fs = require('fs');
 
 //Directory constants
 const serverDir = __dirname.substring(0, __dirname.length - 3)
-const tmpDir = serverDir + "tmpDir";
+const imagesDir = serverDir + "images";
 
 //Setup the express app
 const app = express();
@@ -28,8 +28,20 @@ app.use(cors({
 app.use(bodyParser.json());
 app.use(express.static(serverDir + "build"));
 
-app.get('/test', (req, res) => {
-    res.json({"num": 123})
+app.get('/images/:country/:fileName', (req, res) => {
+	let options = {
+    root: imagesDir + '/' + req.params.country,
+    dotfiles: 'deny',
+    headers: {
+        'x-timestamp': Date.now(),
+        'x-sent': true
+    }
+  };
+
+  let fileName = req.params.fileName;
+  res.sendFile(fileName, options, function (err) {
+    if (err) console.log(err);
+  });
 });
 
 //Serve the static page if the user doesn't hit any of the other endpoints

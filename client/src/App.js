@@ -1,26 +1,15 @@
-import React, { Component } from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import './App.css';
-import map from './uk.png';
-
-const styles = theme => ({
-  limitWidth: {
-    height: '100vh'
-  }
-});
+import React, {Component} from 'react';
+import uk from './uk.json';
+import MapContainer from './MapContainer'
 
 class App extends Component {
   render () {
-    const {classes} = this.props;
-
     return(
-      <div className="App">
-        <main>
-          <img src={map} alt="map" className={classes.limitWidth}/>
-        </main>
+      <div>	
+        <MapContainer mapData={uk}/>
       </div>
     );
   }
 }
 
-export default withStyles(styles)(App);
+export default App;

@@ -23,7 +23,7 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - /var/www/files:/src/app/server/files
+      - /var/www/images:/src/app/server/images
     links:
       - db
     depends_on:

@@ -22,7 +22,7 @@ services:
       dockerfile: server/Dockerfile
     volumes:
       - ./server/src:/src/app/server/src
-      - ./server/tmp/files:/src/app/server/files
+      - ~/Desktop/images:/src/app/server/images
     ports:
       - 8080:8080
     links:
