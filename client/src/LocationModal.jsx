@@ -91,7 +91,7 @@ class LocationModal extends Component {
             >
 	          	{this.state.images.map(function(link) {
 					      return  <div key={link}>
-										      <img src={link} alt="loading..."/>
+										      <img src={link} alt="loading..." style={{'image-orientation': 'from-image'}}/>
 										    </div>
 					    })}
 	          </Carousel>
