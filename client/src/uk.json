@@ -10,147 +10,168 @@
 			"name": "Blaenavon Ironworks",
 			"lat": 51.777392,
 			"lng": -3.088570,
-			"description": "This industrial site is one of the first iron smelting sites in Wales that began its industrial revolution. The accompanying picture is an iron replica of what the facility would have looked like during operations.\n\nThey mostly produced pig iron, a weaker type of iron that would later be refined into cast iron or steel. It features various furnaces and warehouses, housing for the workers, and a Balancing Tower that acted as an elevator for carts carrying the pig iron."
+			"description": "This industrial site is one of the first iron smelting sites in Wales that began the country's industrial revolution. There is an an accompanying picture, which is an iron replica of what the facility would have looked like during operations.\n\nThey mostly produced pig iron, a weaker type of iron that would later be refined into cast iron or steel. It features various furnaces and warehouses, housing for the workers, and a Balancing Tower that acted as an elevator for carts carrying the pig iron."
 		},
 		{
 			"id": "Big-Pit",
 			"name": "Big Pit",
 			"lat": 51.7728715,
 			"lng": -3.1072453,
-			"description": ""
+			"description": "Big Pit Colliery is the coal mine in Blaenavon, and was in use from the 1840s to 1990. It is one of the more old fashioned coal mines in the world, as it was unable to use modern techniques such as explosives mining due to the soft ground overhead that posed a constant risk of collapsing.\n\nMost of our time here was spent underground in the actual mines, where we were taken through a guided tour of the tunnels. Of course with it being so dark, we couldn't capture any pictures of the interesting bits, unfornately."
 		},
 		{
 			"id": "Bourton-on-the-Water",
 			"name": "Bourton-on-the-Water",
 			"lat": 51.8761406,
 			"lng": -1.8058978,
-			"description": ""
+			"description": "After our visit to the Broadway Tower, we went back down the hill and explored the town center. We went to a Motor Museum, through a maze, and did a bit of shopping in the Cotswolds"
+		},
+		{
+			"id": "Brighton",
+			"name": "Brighton",
+			"lat": 50.8223517,
+			"lng": -0.1398742,
+			"description": "After our visit to the pavillion, we took a walk around the city of Brighton and around its boardwalk pier."
 		},
 		{
 			"id": "Brighton-Royal-Pavilion",
-			"name": "Brighton & Royal Pavilion",
+			"name": "Brighton Royal Pavilion",
 			"lat": 50.8223517,
 			"lng": -0.1398742,
-			"description": ""
+			"description": "King George the 4th built the Pavilion when he was still Prince of Wales, for use primarily as a bachelor's pad of sorts where he would host parties and other social gatherings for his many guests.  The building features an Indian style architecture on the outside of the building, and a Chinese style decorated the interior with dragons, bamboo, and lots of red and gold. It is located in the middle of Brighton, likely because King George liked to be the center of attention and by building the Pavilion here, he was always the center of attention in Brighton."
 		},
 		{
 			"id": "Broadway-Tower-Cotswolds",
 			"name": "Broadway Tower - Cotswolds",
 			"lat": 52.0253659,
 			"lng": -1.8286351,
-			"description": ""
+			"description": "This day began with a hike up a hill through the fields of sheep towards a small 3-story tower, but more importantly a nice view of the countryside."
+		},
+		{
+			"id": "Brunel's-SS-Great-Britain",
+			"name": "Brunel's SS Great Britain",
+			"lat": 51.4491712,
+			"lng": -2.6105945,
+			"description": "The Great Britain was certainly a technological innovation in its time. It was fitted with a 1000 hp motor, the largest of any sea vessel, and was the first in its class to be built of iron and use a propeller instead of the traditional wooden paddles that powered all the other ships of its time. She sailed from the mid 1800s up until the late 1970s as a passenger ship, a cargo ship, and even served in the British Navy during the crimean war and WW1.\n\nThe engineer of the ship, Brunel, was a brilliant man who was at the head of many great projects of his day. He engineered the ship while he was also busy engineering the main portions of the GWR, including its broad track design, and many other bridges and projects throughout his 53 year life."
 		},
 		{
 			"id": "Canterbury",
 			"name": "Canterbury",
 			"lat": 51.2785387,
 			"lng": 1.0488315,
-			"description": ""
+			"description": "Our day in Dover ended early, so we decided to take a bit of an unplanned trip to Canterbury to explore the city and take some pictures. Canterbury features a large Cathedral at its heart; unfortunately it is under construction and was closed so we don't really have any good pictures of it."
 		},
 		{	
 			"id": "Cardiff",
 			"name": "Cardiff",
 			"lat": 51.5022199,
 			"lng": -3.2750896,
-			"description": ""
+			"description": "After our trip to Cardiff castle, we went on a walk around the city itself and around Cardiff Bay."
 		},
 		{
 			"id": "Cardiff-Castle",
 			"name": "Cardiff Castle",
 			"lat": 51.4822313,
 			"lng": -3.1833654,
-			"description": ""
+			"description": "Cardiff castle is extravagantly decorated in a couple of its newer towers, as it was used as a home for Lord Bute. It even has one of the world's first flushable toilets. Aside from the newer towers, the castle has a 2000 year old wall from Roman times, a keep surrounded by a moat at its center, and tunnels used as air raid shelters during WW2."
+		},
+		{
+			"id": "Clifton-Suspension-Bridge",
+			"name": "Clifton Suspension Bridge",
+			"lat": 51.4550122,
+			"lng": -2.6365525,
+			"description": "This suspension bridge connects the Avon Gorge that goes throguh the middle of Clifton. We went here for a quick visit of the sights."
 		},
 		{
 			"id": "Dover-Castle",
 			"name": "Dover Castle",
 			"lat": 51.128771,
 			"lng": 1.3212023,
-			"description": ""
+			"description": "Built by King Henry the 2nd in the 12th century, Dover Castle is located at the closest point to France in England. It features a large 3 story square keep at the heart of the castle with tall 20 foot ceilings on each level and a symmetrical spiral staircase in two corners of the keep.\n\nThe castle is litttered with tunnels, some medievil and some more modern as many of the tunnels were used during WW2. While most were used as a military outpost for sending and receiving messages, they also were used as a makeshift hospital. The more modern ones were outfitted with emergency lights and backup batteries, as these proved to be necessary since the city of Dover was bombed at least once a day during the latter half of WW2 and its power supply was often unreliable as a result."
 		},
 		{
 			"id": "Dover-National-Trail",
 			"name": "Dover National Trail",
 			"lat": 51.137435,
 			"lng": 0.9962023,
-			"description": ""
+			"description": "Here we walked atop the white cliffs of Dover along a national trail enjoying the sun and the views. Dover is an industrial city with a harbour, so the port can also be seen in a couple pictures."
 		},
 		{
 			"id": "Forest-of-Dean",
 			"name": "Forest of Dean",
 			"lat": 51.7853065,
 			"lng": -2.7416218,
-			"description": ""
+			"description": "Mom being a good example, walking her bike across the road! Maybe just happy to be off the dang thing for a moment during our 12 mile journey around the forest on the Family Trail!"
 		},
 		{
 			"id": "Gloucester",
 			"name": "Gloucester",
 			"lat": 51.8571572,
 			"lng": -2.2775319,
-			"description": ""
+			"description": "A local watchmaker’s storefront, Peter Rabbit at the Tailor of Gloucester, and ringing the bell at St. Michael’s Tower."
 		},
 		{
-			"id": "Newport",
-			"name": "Newport",
-			"lat": 51.5742802,
-			"lng": -3.0493217,
-			"description": ""
+			"id": "Gloucester-Cathedral",
+			"name": "Gloucester-Cathedral",
+			"lat": 51.8571572,
+			"lng": -2.2775319,
+			"description": "The Cathedral of Gloucester was one of the better cathedrals that we have visited. It wasn’t necessarily the prettiest, though the Cloisters are spectacular, but they really catered to the people rather than just the religious aspects.\n\nThere are a variety of tours you can take and we did the Tower Tour, so we got to go to the top (296 steps) and look down on the cathedral. Along the way, we were shown the various bells and how they are rung - neat stuff.\n\nEven without a guide, they set up an area where a visitor could explore how the cathedral was constructed, significance of the stained glass (from the 1300’s), and even let you try on period clothing including that of the clergy - you don’t see that in most cathedrals! They still had easy to understand poster boards about the life of Jesus - so the religious aspects were there - but brought down to a level that a non-Christian could understand it. All in all, I liked the approach.\n\nLess stuffy, more connected with the audience, while maintaining the core function and values that the building represents."
 		},
 		{
 			"id": "Newport-Transporter-Bridge",
 			"name": "Newport Transporter Bridge",
 			"lat": 51.5711643,
 			"lng": -2.9893777,
-			"description": ""
+			"description": "This bridge was build in the late 1800s to transport people across the river below via a gondallah. The gondallah is essentially moved via the bridge above acting as a massive overhead crane with two towers. We explored the maintenance area above. The bridge is in a bit of a state of disrepair, which is reflected in a picture of the extremely fraying rope. Fortunately, we were informed by one of the people who worked there that \"8 million pounds will be going towards fixing up the bridge, and 2 million towards the visitor center. Of course, the engineer would prefer if all 10 million went towards the repairs of the bridge.\""
 		},
 		{
 			"id": "Nuthatch-Cottage",
 			"name": "Nuthatch Cottage",
 			"lat": 51.8453459,
 			"lng": -2.4752354,
-			"description": ""
+			"description": "Nuthatch cottage was our Airbnb for most of this vacation, since it was ideally located very close to Wales which allowed us to visit various places in its vicinity over a few days. There's nothing too special about this place, however they had a couple cute cats who would often come and paw at the door to visit us while we were home. They are Magnus - orange and white hair - and Nemo - black and white hair."
 		},
 		{
 			"id": "Oxford",
 			"name": "Oxford",
 			"lat": 51.757607,
 			"lng": -1.256848,
-			"description": "this is\n\na\n\ntest"
+			"description": "Our primary destination in Oxford was Oxford University's campus where we were taken on a Harry Highlights tour. We were guided through the university and were told about its history and shown various parts of campus where the Harry Potter films were either shot or inspiration was drawn from.\n\nWe also visited Christ Church by the University's campus - long line, grand dining hall, big grass courtyard - where some more inspiration for the movies were drawn, particularly the dining hall which is recognizable as Hogwart's dining hall. The dining hall in Christ Church was not the one portrayed in the films as it was too small once cameras, equipment and actors were in there for filming. However, a one and a half scale reciplica was built for the filming of the Harry Potter movies.\n\nWe also visited the Blackwell bookstore, which has just over 2 miles of bookcases and is home to one of the largest varieties of books in the world."
 		},
 		{
 			"id": "Seven-Sisters-Walk",
 			"name": "Seven Sisters-Walk",
 			"lat": 50.7589470,
 			"lng": 0.1478850,
-			"description": ""
+			"description": "These shots were captured along an hour and a half walk alongside a beach and up a hill to get some great views of \"The Sever Sisters\". The cliffs are named as such because each \"Sister\" represents a peak in the white faced cliffs, which are made entirely of chalk."
 		},
 		{
 			"id": "Steam-Museum-GWR",
 			"name": "Steam Museum GWR",
 			"lat": 51.562932,
 			"lng": -1.7972864,
-			"description": ""
+			"description": "This museum takes you through a history of the Great Western Railway company (GWR) and the beginnings, peak, and decline of steam powered trains in Britain."
 		},
 		{
 			"id": "Symonds-Yat-Rock",
 			"name": "Symonds Yat Rock",
 			"lat": 51.8305822,
 			"lng": -2.6398668,
-			"description": ""
+			"description": "We went on a short hike around this park through the forest up to a couple viewpoints where we were able to take some nice pictures. We also met a cute dog along the way."
 		},
 		{
 			"id": "Thornbury-Castle",
 			"name": "Thornbury Castle",
 			"lat": 51.614059,
 			"lng": -2.5323267,
-			"description": ""
+			"description": "NOTE: INCOMPLETE\n\nWe re-visitted this castle from out last trip to England where we attempted to recreate some old pictures.\n\nThe other pictures are necessary to make this meaningful, and this will be completed at a later date."
 		},
 		{
 			"id": "Tredegar-House",
 			"name": "Tredegar House",
 			"lat": 51.5616266,
 			"lng": -3.030315,
-			"description": ""
+			"description": "This grand estate was owned by the Morgan family from the 16th century up until the late 20th century. The Morgans were a very rich and powerful family who owned a lot of land throughout Wales.  This vast amount of land allowed them to become billionaires in the 19th century at the height of their wealth, as lots of coal was mined on their land and various levies were put in place to earn them lots of money.\n\nTheir wealth eventually ran out as one of the family's last members vastly misused, mismanaged, and partied the families money away from the early 1900s to the 40s. From there, many of the family's members kept passing on the estate to each other as they were not able to afford its upkeep, all the while inheritenced tax kept chipping away at what was left of it.\n\nBy the end of the Morgans run, the family Bank account had a mere 275 thousand pounds in it, and the estate was sold in 1950. It was used as a Catholic boarding school for girls until 2012, when it was then turned into a historical site and museum."
 		}
 	]
 }
