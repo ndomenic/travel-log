@@ -1,7 +1,7 @@
 version: '3.5'
 
 services:
-  db-travel-log:
+  db-travel-log-production:
     container_name: db-travel-log-production
     image: mariadb
     restart: always
