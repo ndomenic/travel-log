@@ -13,7 +13,7 @@ services:
     ports:
       - '3307:3306'
     volumes:
-      - /var/www/travel-portal-db:/var/lib/mysql
+      - /var/www/travel-log-db:/var/lib/mysql
 
   travel-log-production:
     container_name: travel-log-production
