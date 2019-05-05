@@ -65,7 +65,7 @@ app.get('*', (req,res) =>{
     res.sendFile(path.join(serverDir+'build/index.html'));
 });
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8081;
 app.listen(port).on('error', function(err){
     console.log('An error occurred!');
     console.log(err);

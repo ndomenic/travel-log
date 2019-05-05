@@ -24,7 +24,7 @@ services:
       - ./server/src:/src/app/server/src
       - ~/Desktop/images:/src/app/server/images
     ports:
-      - 8080:8080
+      - 8081:8081
     links:
       - db-travel-log
     depends_on:
