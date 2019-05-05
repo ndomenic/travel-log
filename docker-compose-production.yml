@@ -25,7 +25,7 @@ services:
     volumes:
       - /var/www/images:/src/app/server/images
     links:
-      - db-travel-log-production
+      - db-travel-log
     depends_on:
-      - db-travel-log-production
+      - db-travel-log
     command: [sh, -c, "npm install && npm run start"]
