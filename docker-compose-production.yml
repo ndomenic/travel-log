@@ -11,7 +11,7 @@ services:
       MYSQL_PASSWORD: 'password'
       MYSQL_ROOT_PASSWORD: 'password'
     ports:
-      - '3306:3307'
+      - '3307:3306'
     volumes:
       - /var/www/travel-portal-db:/var/lib/mysql
 
@@ -25,7 +25,7 @@ services:
     volumes:
       - /var/www/images:/src/app/server/images
     links:
-      - db
+      - db-travel-log-production
     depends_on:
-      - db
+      - db-travel-log-production
     command: [sh, -c, "npm install && npm run start"]
